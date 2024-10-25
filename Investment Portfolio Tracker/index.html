@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> <!-- Include data labels plugin -->
+</head>
+<body>
+  <div class="container">
+    <h1>Investment Portfolio</h1>
+    <form id="investment-form">
+      <input type="text" id="investment-name" placeholder="Investment Name" required>
+      <input type="number" id="investment-amount" placeholder="Invested Amount" required>
+      <input type="number" id="investment-current-value" placeholder="Current Value" required>
+      <button type="submit">Add Investment</button>
+    </form>
+
+    <h2>Your Portfolio</h2>
+    <ul id="portfolio-list"></ul>
+    <div id="portfolio-summary">Total Investment: $0.00</div>
+
+    <canvas id="portfolio-chart" width="400" height="400"></canvas>
+  </div>
+
+  <footer>
+    <p>© 2024 Investment Tracker | Made with ❤️ for finance enthusiasts.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
